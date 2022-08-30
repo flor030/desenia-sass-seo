@@ -1,0 +1,19 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "proyecto muebles industriales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flor030/desenia..git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flor030/desenia./issues"
+  },
+  "homepage": "https://github.com/flor030/desenia.#readme"
+}

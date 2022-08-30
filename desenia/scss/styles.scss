@@ -1,0 +1,107 @@
+@import "./variable/variable";
+@import "../css/styles.css";
+
+body {
+    background-image: url(../img/fondo\ nuevo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    display:flex;
+    justify-content: space-between;
+    margin-left : map-get($map: $margin, $key: $header-left);
+    margin-right: map-get($map: $margin, $key: $header-right);
+    margin-top: map-get($map: $margin, $key: $header-top);
+h1{
+    color: map-get($map: $colores, $key: $verdeoscuro);
+    text-align: center;
+}
+}
+.inicio__logo{
+    width: $logo-width;
+    object-fit: cover
+}
+.inicio__titulo{
+    margin-bottom: map-get($map: $margin, $key: $inicio-bottom);
+}
+.inicio{
+    position: absolute;
+    top:0;
+    width: map-get($map: $medidas, $key: $inicio-bottom);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: map-get($map: $medidas, $key: $inicio-height);
+}
+.titulo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.titulo h1{
+    margin-right: map-get($map: $margin, $key: $h1-right);
+}
+.inicio1{
+    text-align: center;
+}
+main {
+     height: map-get($map: $medidas, $key: $main-heigh);
+    .subtitulo 
+             h2{
+    background-color: map-get($map: $colores, $key: $verdegris);
+    font-size: map-get($map: $size, $key: $font-h2);
+    font-weight:normal;
+    text-align: center;
+}
+    .subtitulo{
+    display: flex;
+    justify-content: space-evenly;
+}
+    .subtitulo-quienes-somos{
+    padding: 100px;
+}
+    .subtitulo-img{
+    margin-right: map-get($map: $margin, $key: $sub-img-right);
+    margin-top: map-get($map: $margin, $key: $sub-img-top) ;
+    border: solid 15px;
+    border-color: map-get($map: $colores, $key: $azul);
+}
+.Reseña{
+    font-style: normal;
+    font-weight: bolder;
+    font-size: map-get($map: $size, $key: $font-reseña);
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    color: map-get($map: $colores, $key: $verdeclaro);
+    background-color: rgb(238, 236, 236);
+}
+p{
+    line-height: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+}
+footer {
+display: flex;
+justify-content: end;
+}
+@mixin envios-contacto {
+    display: flex;
+    flex-direction: column;
+    color: darkseagreen;
+    background-color: rgb(238, 236, 236);;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+}
+.contacto {
+    @include envios-contacto
+}
+.envios {
+    @include envios-contacto()
+}

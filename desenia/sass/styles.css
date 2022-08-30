@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/*colores */
+/* medidas logo */
+/*tamaños de fuente*/
+@import "../css/styles.css";
+body {
+  background-image: url(../img/fondo\ nuevo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+header h1 {
+  color: darkgreen;
+  text-align: center;
+}
+
+.inicio__logo {
+  width: 136px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.inicio__titulo {
+  margin-bottom: 1%;
+}
+
+.inicio {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200%;
+}
+
+.titulo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.titulo h1 {
+  margin-right: 20%;
+}
+
+.inicio1 {
+  text-align: center;
+}
+
+main {
+  height: 100vh;
+}
+main .subtitulo h2 {
+  background-color: darkslategrey;
+  font-size: 26px;
+  font-weight: normal;
+  text-align: center;
+}
+main .subtitulo {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .subtitulo-quienes-somos {
+  padding: 100px;
+}
+main .subtitulo-img {
+  margin-right: 50px;
+  margin-top: 50px;
+  border: solid 15px;
+  border-color: aliceblue;
+}
+main .Reseña {
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px, 26px, 28px;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  color: darkseagreen;
+  background-color: rgb(238, 236, 236);
+}
+main p {
+  line-height: 30px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+}/*# sourceMappingURL=styles.css.map */
